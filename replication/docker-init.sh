@@ -6,7 +6,7 @@ docker-compose down
 docker-compose up -d  postgres_master
 
 echo "Starting postgres_master node..."
-sleep 30  # Waits for master note start complete
+sleep 120  # Waits for master note start complete
 
 echo "Prepare replica config..."
 docker exec -it postgres_master sh /etc/postgresql/init-script/init.sh
