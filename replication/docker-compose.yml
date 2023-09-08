@@ -23,8 +23,8 @@ services:
     restart: always
     volumes:
       - ./data-slave:/var/lib/postgresql/data
-      - ./config/postgres.conf:/etc/postgresql/postgresql.conf
-      - ./config/pg_hba.conf:/etc/postgresql/pg_hba.conf
+      - ./init-script/config/postgres.conf:/etc/postgresql/postgresql.conf
+      - ./init-script/config/pg_hba.conf:/etc/postgresql/pg_hba.conf
     ports:
       - "127.0.0.1:5433:5432"
     environment:

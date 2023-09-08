@@ -1,6 +1,6 @@
 echo "Clearing data"
-rm -rf ../postgresql-rp/data/*
-rm -rf ../postgresql-rp/data-slave/*
+rm -rf ./data/*
+rm -rf ./data-slave/*
 docker-compose down
 
 docker-compose up -d  postgres_master
